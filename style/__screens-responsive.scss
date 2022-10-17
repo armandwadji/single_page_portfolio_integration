@@ -29,13 +29,13 @@
 }
 
 @mixin SmallMedMedium {
-  @media screen and (max-width: 72rem) {
+  @media screen and (min-width: 720px) {
     @content;
   }
 }
 
 @mixin Medium {
-  @media screen and (max-width: 78rem) {
+  @media screen and (min-width: 780px) {
     @content;
   }
 }
@@ -53,7 +53,7 @@
 }
 
 @mixin MediumLaptop {
-  @media screen and (max-width: 102.6rem) {
+  @media screen and (min-width: 102.6px) {
     @content;
   }
 }
