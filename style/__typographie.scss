@@ -26,4 +26,8 @@ img {
   margin-inline: clamp(1.6rem, calc(-2.3rem + 14vw), 16.5rem);
   max-width: calc(1px * (1111));
   height: 100%;
+
+  @include VeryBigLaptop {
+    margin-inline: auto;
+  }
 }
