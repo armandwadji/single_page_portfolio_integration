@@ -244,4 +244,7 @@ img {
   .hero__slogan--texte {
     width: clamp(28.5rem, 8rem + 41.8vw, 73rem);
   }
+}
+.hero__services {
+  background-color: green;
 }/*# sourceMappingURL=styles.css.map */
