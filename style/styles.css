@@ -179,20 +179,22 @@ img {
   }
 }
 
-.hero .nav {
+.hero__nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   -webkit-margin-before: clamp(1.6rem, 0.6rem + 1.7vw, 3.4rem);
           margin-block-start: clamp(1.6rem, 0.6rem + 1.7vw, 3.4rem);
+  -webkit-margin-after: clamp(3.2rem, 1.3rem + 3vw, 6.4rem);
+          margin-block-end: clamp(3.2rem, 1.3rem + 3vw, 6.4rem);
 }
-.hero .nav .logo {
+.hero__nav .logo {
   position: relative;
   background-color: #030303;
   height: clamp(4.8rem, 2.6rem + 1.5vw, 6.4rem);
   width: clamp(4.8rem, 2.6rem + 1.5vw, 6.4rem);
 }
-.hero .nav .logo::after {
+.hero__nav .logo::after {
   content: " ";
   position: absolute;
   height: clamp(2.4rem, 0.95rem + 0.25vw, 3.2rem);
@@ -203,15 +205,35 @@ img {
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.hero .nav .free-consultation {
+.hero__nav .free-consultation {
   background-color: #030303;
   color: #fff7f0;
   border-radius: 2.8rem;
 }
-.hero .nav .free-consultation p {
+.hero__nav .free-consultation p {
   text-transform: capitalize;
   padding-block: clamp(0.8rem, 0.4rem + 0.6vw, 1.4rem);
   padding-inline: clamp(2.8rem, 1.4rem + 1.6vw, 4.5rem);
   font-size: clamp(1.4rem, 0.8rem + 0.2vw, 1.6rem);
   text-align: center;
+}
+.hero__slogan {
+  background-color: red;
+  margin-inline: auto;
+  max-width: 75.2rem;
+}
+.hero__slogan--title {
+  text-align: center;
+  font-size: clamp(3.6rem, 1.8rem + 1.9vw, 5.6rem);
+  font-weight: 700;
+  line-height: 4.5rem;
+  -webkit-margin-after: clamp(1.6rem, 0.8rem + 0.7vw, 2.3rem);
+          margin-block-end: clamp(1.6rem, 0.8rem + 0.7vw, 2.3rem);
+}
+.hero__slogan--texte {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #7a746e;
+  padding-inline: 2rem;
 }/*# sourceMappingURL=styles.css.map */

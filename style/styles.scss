@@ -9,12 +9,13 @@
 .hero {
   //   background-color: red;
 
-  .nav {
+  &__nav {
     // background-color: green;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-block-start: clamp(1.6rem, calc(0.6rem + 1.7vw), 3.4rem);
+    margin-block-end: clamp(3.2rem, calc(1.3rem + 3vw), 6.4rem);
 
     .logo {
       position: relative;
@@ -39,6 +40,7 @@
       background-color: $black;
       color: $lightCream;
       border-radius: 2.8rem;
+
       p {
         text-transform: capitalize;
         padding-block: clamp(0.8rem, calc(0.4rem + 0.6vw), 1.4rem);
@@ -46,6 +48,28 @@
         font-size: clamp(1.4rem, calc(0.8rem + 0.2vw), 1.6rem);
         text-align: center;
       }
+    }
+  }
+
+  &__slogan {
+    background-color: red;
+    margin-inline: auto;
+    max-width: 75.2rem;
+
+    &--title {
+      text-align: center;
+      font-size: clamp(3.6rem, calc(1.8rem + 1.9vw), 5.6rem);
+      font-weight: 700;
+      line-height: 4.5rem;
+      margin-block-end: clamp(1.6rem, calc(0.8rem + 0.7vw), 2.3rem);
+    }
+
+    &--texte {
+      text-align: center;
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: $mediumBrown;
+      padding-inline: 2rem;
     }
   }
 }
