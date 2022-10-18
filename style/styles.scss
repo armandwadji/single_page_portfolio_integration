@@ -77,6 +77,78 @@
   }
 
   &__services {
-    background-color: green;
+    // background-color: green;
+    display: grid;
+    grid-template-rows: repeat(6, 18.2rem);
+    gap: 2.4rem;
+    grid-template-areas:
+      "G G"
+      "G G"
+      "U U"
+      "I I"
+      "P P"
+      "M M";
+
+    @include Medium {
+      grid-template-rows: repeat(3, 18.2rem);
+      gap: 2.5rem;
+      grid-template-areas:
+        "G G U U"
+        "G G I I"
+        "P P M M";
+    }
+
+    @include VeryBigLaptop {
+      grid-template-rows: repeat(2, 18.2rem);
+      grid-template-areas:
+        "G G U P"
+        "G G I M";
+    }
+
+    &--item {
+      border-radius: 0.8rem;
+      display: grid;
+
+      &:nth-child(1) {
+        background-color: $galacticBlue;
+
+        grid-area: G;
+      }
+      &:nth-child(2) {
+        grid-area: U;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2.5rem;
+
+        ul {
+          border-radius: 0.8rem;
+
+          &:nth-child(1) {
+            display: grid;
+            background-color: $summerYellow;
+
+            p {
+              text-transform: uppercase;
+            }
+          }
+          &:nth-child(2) {
+            display: grid;
+            background-color: $pink;
+          }
+        }
+      }
+      &:nth-child(3) {
+        background-color: $lightRed;
+        grid-area: I;
+      }
+      &:nth-child(4) {
+        background-color: $cyan;
+        grid-area: P;
+      }
+      &:nth-child(5) {
+        background-color: $darkPurple;
+        grid-area: M;
+      }
+    }
   }
 }

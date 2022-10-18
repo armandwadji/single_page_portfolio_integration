@@ -8,7 +8,7 @@ body {
 
 :is(h1, h2, h3) {
   font-family: "Plus Jakarta Sans", serif;
-  //   font-size: 5.6rem;
+  // font-size: 5.6rem;
   font-weight: 300;
 }
 
@@ -21,13 +21,47 @@ img {
   display: block;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 .container {
   position: relative;
-  margin-inline: clamp(1.6rem, calc(-2.3rem + 14vw), 16.5rem);
-  max-width: calc(1px * (1111));
-  height: 100%;
+  // margin-inline: 1.6rem;
+  max-width: 111.1rem;
+  padding-inline: clamp(1.6rem, calc(-2.3rem + 14vw), 16.5rem);
+  margin-inline: auto;
+  margin-block-end: 10rem;
+
+  @include Medium {
+    // margin-inline: 4rem;
+    margin-block-end: 12rem;
+  }
 
   @include VeryBigLaptop {
-    margin-inline: auto;
+    // margin-inline: 16.5rem;
+    margin-block-end: 8.8rem;
+    // margin-inline: auto;
+  }
+}
+
+.disposition {
+  & > img:nth-child(1) {
+    background: transparent;
+    align-self: start;
+    justify-self: end;
+    padding-block-start: 2.4rem;
+    padding-inline-end: 2.4rem;
+  }
+
+  & > p:nth-child(2) {
+    align-self: end;
+    justify-self: start;
+    padding-block-end: 2.4rem;
+    padding-inline-start: 2.4rem;
+    font-size: 2.4rem;
+    text-transform: capitalize;
+    color: $lightCream;
   }
 }
