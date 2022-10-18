@@ -174,14 +174,15 @@ ul {
 
 .container {
   position: relative;
-  max-width: 111.1rem;
-  padding-inline: clamp(1.6rem, -2.3rem + 14vw, 16.5rem);
+  padding-inline: 1.6rem;
   margin-inline: auto;
   -webkit-margin-after: 10rem;
           margin-block-end: 10rem;
+  max-width: 111.1rem;
 }
 @media screen and (min-width: 768px) {
   .container {
+    padding-inline: 4rem;
     -webkit-margin-after: 12rem;
             margin-block-end: 12rem;
   }
@@ -211,7 +212,7 @@ ul {
           padding-inline-start: 2.4rem;
   font-size: 2.4rem;
   text-transform: capitalize;
-  color: #fff7f0;
+  color: #ffffff;
 }
 
 .hero__nav {
@@ -289,7 +290,6 @@ ul {
 @media screen and (min-width: 768px) {
   .hero__services {
     grid-template-rows: repeat(3, 18.2rem);
-    gap: 2.5rem;
     grid-template-areas: "G G U U" "G G I I" "P P M M";
   }
 }
