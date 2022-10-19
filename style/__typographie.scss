@@ -30,8 +30,8 @@ ul {
   position: relative;
   padding-inline: 1.6rem;
   margin-inline: auto;
-  margin-block-end: 10rem;
   max-width: 111.1rem;
+  margin-block-end: 10rem;
 
   @include Medium {
     padding-inline: 4rem;

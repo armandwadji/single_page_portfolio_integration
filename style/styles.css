@@ -176,9 +176,9 @@ ul {
   position: relative;
   padding-inline: 1.6rem;
   margin-inline: auto;
+  max-width: 111.1rem;
   -webkit-margin-after: 10rem;
           margin-block-end: 10rem;
-  max-width: 111.1rem;
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -243,15 +243,17 @@ ul {
 }
 .hero__nav .free-consultation {
   background-color: #030303;
-  color: #fff7f0;
   border-radius: 2.8rem;
 }
-.hero__nav .free-consultation p {
+.hero__nav .free-consultation button {
   text-transform: capitalize;
   padding-block: clamp(0.8rem, 0.4rem + 0.6vw, 1.4rem);
   padding-inline: clamp(2.8rem, 1.4rem + 1.6vw, 4.5rem);
   font-size: clamp(1.4rem, 0.8rem + 0.2vw, 1.6rem);
   text-align: center;
+  background: transparent;
+  border: none;
+  color: #fff7f0;
 }
 .hero__slogan {
   display: flex;
@@ -346,4 +348,17 @@ ul {
 .hero__services--item:nth-child(5) {
   background-color: #552049;
   grid-area: M;
+}
+
+.main .about {
+  background-color: red;
+  -webkit-margin-after: 10rem;
+          margin-block-end: 10rem;
+}
+.main .about__profil {
+  background-color: #61c4b7;
+  height: 30rem;
+  width: 30rem;
+  margin-inline: auto;
+  overflow: hidden;
 }/*# sourceMappingURL=styles.css.map */

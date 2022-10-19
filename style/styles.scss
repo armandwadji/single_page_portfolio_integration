@@ -35,15 +35,17 @@
 
     .free-consultation {
       background-color: $black;
-      color: $lightCream;
       border-radius: 2.8rem;
 
-      p {
+      button {
         text-transform: capitalize;
         padding-block: clamp(0.8rem, calc(0.4rem + 0.6vw), 1.4rem);
         padding-inline: clamp(2.8rem, calc(1.4rem + 1.6vw), 4.5rem);
         font-size: clamp(1.4rem, calc(0.8rem + 0.2vw), 1.6rem);
         text-align: center;
+        background: transparent;
+        border: none;
+        color: $lightCream;
       }
     }
   }
@@ -156,6 +158,22 @@
         background-color: $darkPurple;
         grid-area: M;
       }
+    }
+  }
+}
+
+.main {
+  .about {
+    background-color: red;
+    margin-block-end: 10rem;
+
+    &__profil {
+      background-color: $cyan;
+      height: 30rem;
+      width: 30rem;
+      // border-radius: 100%;
+      margin-inline: auto;
+      overflow: hidden;
     }
   }
 }
