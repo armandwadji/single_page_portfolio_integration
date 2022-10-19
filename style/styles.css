@@ -368,6 +368,7 @@ ul {
 .main .about {
   -webkit-margin-after: 10rem;
           margin-block-end: 10rem;
+  max-width: 111.1rem;
 }
 @media screen and (min-width: 768px) {
   .main .about {
@@ -379,6 +380,7 @@ ul {
 @media screen and (min-width: 1440px) {
   .main .about {
     transform: translateX(0);
+    margin-inline: auto;
   }
 }
 .main .about__profil {
@@ -397,6 +399,11 @@ ul {
 @media screen and (min-width: 768px) {
   .main .about__profil {
     transform: scale(1.2);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .main .about__profil {
+    transform: scale(1.5);
   }
 }
 .main .about__profil > :nth-child(1) {

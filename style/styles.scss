@@ -166,6 +166,7 @@
   .about {
     // background-color: red;
     margin-block-end: 10rem;
+    max-width: 111.1rem;
 
     @include Medium {
       display: grid;
@@ -174,6 +175,7 @@
     }
     @include VeryBigLaptop {
       transform: translateX(0);
+      margin-inline: auto;
     }
 
     &__profil {
@@ -190,6 +192,9 @@
 
       @include Medium {
         transform: scale(1.2);
+      }
+      @include VeryBigLaptop {
+        transform: scale(1.5);
       }
 
       & > :nth-child(1) {
