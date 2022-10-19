@@ -1,8 +1,8 @@
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 400;
-  line-height: calc(26 / 16);
+  line-height: calc(28 / 18);
   background-color: $lightCream;
 }
 
@@ -60,5 +60,20 @@ ul {
     font-size: 2.4rem;
     text-transform: capitalize;
     color: $white;
+  }
+}
+.free-consultation {
+  background-color: $black;
+  border-radius: 2.8rem;
+
+  button {
+    text-transform: capitalize;
+    padding-block: clamp(0.8rem, calc(0.4rem + 0.6vw), 1.4rem);
+    padding-inline: clamp(2.8rem, calc(1.4rem + 1.6vw), 4.5rem);
+    font-size: clamp(1.4rem, calc(0.8rem + 0.2vw), 1.6rem);
+    text-align: center;
+    background: transparent;
+    border: none;
+    color: $lightCream;
   }
 }

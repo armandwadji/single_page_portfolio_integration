@@ -164,16 +164,79 @@
 
 .main {
   .about {
-    background-color: red;
+    // background-color: red;
     margin-block-end: 10rem;
 
+    @include Medium {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      transform: translateX(-4.4rem);
+    }
+    @include VeryBigLaptop {
+      transform: translateX(0);
+    }
+
     &__profil {
+      position: relative;
       background-color: $cyan;
       height: 30rem;
       width: 30rem;
-      // border-radius: 100%;
-      margin-inline: auto;
+      border-radius: 100%;
       overflow: hidden;
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      margin-inline: auto;
+      margin-block-end: 4rem;
+
+      @include Medium {
+        transform: scale(1.2);
+      }
+
+      & > :nth-child(1) {
+        justify-self: start;
+        align-self: end;
+      }
+      & > :nth-child(2) {
+        justify-self: end;
+        align-self: start;
+      }
+
+      & > :nth-child(3) {
+        position: absolute;
+        top: 5%;
+        left: -5%;
+      }
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      @include Medium {
+        text-align: left;
+        align-items: start;
+      }
+
+      h2 {
+        font-size: 2.6rem;
+        font-weight: 700;
+        margin-block-end: 2.4rem;
+
+        @include Medium {
+        }
+      }
+
+      p {
+        color: $mediumBrown;
+        margin-block-end: 2.4rem;
+      }
+
+      .free-consultation {
+        background-color: $lightRed;
+        // margin-inline: auto;
+      }
     }
   }
 }
