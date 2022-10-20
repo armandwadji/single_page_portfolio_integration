@@ -191,6 +191,7 @@ ul {
   .container {
     -webkit-margin-after: 8.8rem;
             margin-block-end: 8.8rem;
+    padding-inline: 0;
   }
 }
 
@@ -221,13 +222,20 @@ ul {
 }
 .free-consultation button {
   text-transform: capitalize;
-  padding-block: clamp(0.8rem, 0.4rem + 0.6vw, 1.4rem);
-  padding-inline: clamp(2.8rem, 1.4rem + 1.6vw, 4.5rem);
-  font-size: clamp(1.4rem, 0.8rem + 0.2vw, 1.6rem);
+  padding-block: 0.8rem;
+  padding-inline: 2.8rem;
+  font-size: 1.4rem;
   text-align: center;
   background: transparent;
   border: none;
   color: #fff7f0;
+}
+@media screen and (min-width: 768px) {
+  .free-consultation button {
+    padding-block: 1.4rem;
+    padding-inline: 4.5rem;
+    font-size: 1.6rem;
+  }
 }
 
 .hero__nav {
@@ -255,20 +263,6 @@ ul {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-}
-.hero__nav .free-consultation {
-  background-color: #030303;
-  border-radius: 2.8rem;
-}
-.hero__nav .free-consultation button {
-  text-transform: capitalize;
-  padding-block: clamp(0.8rem, 0.4rem + 0.6vw, 1.4rem);
-  padding-inline: clamp(2.8rem, 1.4rem + 1.6vw, 4.5rem);
-  font-size: clamp(1.4rem, 0.8rem + 0.2vw, 1.6rem);
-  text-align: center;
-  background: transparent;
-  border: none;
-  color: #fff7f0;
 }
 .hero__slogan {
   display: flex;
@@ -365,15 +359,12 @@ ul {
   grid-area: M;
 }
 
-.main .about {
-  -webkit-margin-after: 10rem;
-          margin-block-end: 10rem;
-  max-width: 111.1rem;
-}
 @media screen and (min-width: 768px) {
   .main .about {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 7rem;
+         column-gap: 7rem;
     transform: translateX(-4.4rem);
   }
 }
@@ -381,6 +372,8 @@ ul {
   .main .about {
     transform: translateX(0);
     margin-inline: auto;
+    -webkit-padding-before: 13.6rem;
+            padding-block-start: 13.6rem;
   }
 }
 .main .about__profil {
@@ -422,8 +415,8 @@ ul {
 .main .about__info {
   display: flex;
   flex-direction: column;
-  align-items: center;
   text-align: center;
+  align-items: center;
 }
 @media screen and (min-width: 768px) {
   .main .about__info {
@@ -437,10 +430,20 @@ ul {
   -webkit-margin-after: 2.4rem;
           margin-block-end: 2.4rem;
 }
+@media screen and (min-width: 768px) {
+  .main .about__info h2 {
+    font-size: 3.2rem;
+  }
+}
 .main .about__info p {
   color: #7a746e;
   -webkit-margin-after: 2.4rem;
           margin-block-end: 2.4rem;
+}
+@media screen and (min-width: 768px) {
+  .main .about__info p {
+    font-size: 1.8rem;
+  }
 }
 .main .about__info .free-consultation {
   background-color: #eb7565;

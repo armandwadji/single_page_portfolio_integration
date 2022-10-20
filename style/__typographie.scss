@@ -40,6 +40,7 @@ ul {
 
   @include VeryBigLaptop {
     margin-block-end: 8.8rem;
+    padding-inline: 0;
   }
 }
 
@@ -68,12 +69,18 @@ ul {
 
   button {
     text-transform: capitalize;
-    padding-block: clamp(0.8rem, calc(0.4rem + 0.6vw), 1.4rem);
-    padding-inline: clamp(2.8rem, calc(1.4rem + 1.6vw), 4.5rem);
-    font-size: clamp(1.4rem, calc(0.8rem + 0.2vw), 1.6rem);
+    padding-block: 0.8rem;
+    padding-inline: 2.8rem;
+    font-size: 1.4rem;
     text-align: center;
     background: transparent;
     border: none;
     color: $lightCream;
+
+    @include Medium {
+      padding-block: 1.4rem;
+      padding-inline: 4.5rem;
+      font-size: 1.6rem;
+    }
   }
 }

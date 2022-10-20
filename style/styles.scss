@@ -33,21 +33,21 @@
       }
     }
 
-    .free-consultation {
-      background-color: $black;
-      border-radius: 2.8rem;
+    // .free-consultation {
+    //   background-color: $black;
+    //   border-radius: 2.8rem;
 
-      button {
-        text-transform: capitalize;
-        padding-block: clamp(0.8rem, calc(0.4rem + 0.6vw), 1.4rem);
-        padding-inline: clamp(2.8rem, calc(1.4rem + 1.6vw), 4.5rem);
-        font-size: clamp(1.4rem, calc(0.8rem + 0.2vw), 1.6rem);
-        text-align: center;
-        background: transparent;
-        border: none;
-        color: $lightCream;
-      }
-    }
+    //   button {
+    //     text-transform: capitalize;
+    //     padding-block: clamp(0.8rem, calc(0.4rem + 0.6vw), 1.4rem);
+    //     padding-inline: clamp(2.8rem, calc(1.4rem + 1.6vw), 4.5rem);
+    //     font-size: clamp(1.4rem, calc(0.8rem + 0.2vw), 1.6rem);
+    //     text-align: center;
+    //     background: transparent;
+    //     border: none;
+    //     color: $lightCream;
+    //   }
+    // }
   }
 
   &__slogan {
@@ -164,18 +164,17 @@
 
 .main {
   .about {
-    // background-color: red;
-    margin-block-end: 10rem;
-    max-width: 111.1rem;
-
     @include Medium {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      column-gap: 7rem;
       transform: translateX(-4.4rem);
     }
     @include VeryBigLaptop {
       transform: translateX(0);
       margin-inline: auto;
+      padding-block-start: 13.6rem;
+      // padding-inline: 0;
     }
 
     &__profil {
@@ -207,8 +206,10 @@
       }
 
       & > :nth-child(3) {
+        // background-color: red;
         position: absolute;
         top: 5%;
+
         left: -5%;
       }
     }
@@ -216,8 +217,8 @@
     &__info {
       display: flex;
       flex-direction: column;
-      align-items: center;
       text-align: center;
+      align-items: center;
 
       @include Medium {
         text-align: left;
@@ -230,17 +231,21 @@
         margin-block-end: 2.4rem;
 
         @include Medium {
+          font-size: 3.2rem;
         }
       }
 
       p {
         color: $mediumBrown;
         margin-block-end: 2.4rem;
+
+        @include Medium {
+          font-size: 1.8rem;
+        }
       }
 
       .free-consultation {
         background-color: $lightRed;
-        // margin-inline: auto;
       }
     }
   }
