@@ -175,8 +175,6 @@ ul {
 .container {
   position: relative;
   padding-inline: 1.6rem;
-  margin-inline: auto;
-  max-width: 111.1rem;
   -webkit-margin-after: 10rem;
           margin-block-end: 10rem;
 }
@@ -189,6 +187,8 @@ ul {
 }
 @media screen and (min-width: 1440px) {
   .container {
+    max-width: 111.1rem;
+    margin-inline: auto;
     -webkit-margin-after: 8.8rem;
             margin-block-end: 8.8rem;
     padding-inline: 0;
@@ -370,7 +370,6 @@ ul {
 }
 @media screen and (min-width: 1440px) {
   .main .about {
-    transform: translateX(0);
     margin-inline: auto;
     -webkit-padding-before: 13.6rem;
             padding-block-start: 13.6rem;

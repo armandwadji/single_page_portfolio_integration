@@ -29,8 +29,7 @@ ul {
 .container {
   position: relative;
   padding-inline: 1.6rem;
-  margin-inline: auto;
-  max-width: 111.1rem;
+
   margin-block-end: 10rem;
 
   @include Medium {
@@ -39,6 +38,8 @@ ul {
   }
 
   @include VeryBigLaptop {
+    max-width: 111.1rem;
+    margin-inline: auto;
     margin-block-end: 8.8rem;
     padding-inline: 0;
   }

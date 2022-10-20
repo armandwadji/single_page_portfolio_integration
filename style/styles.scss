@@ -171,7 +171,7 @@
       transform: translateX(-4.4rem);
     }
     @include VeryBigLaptop {
-      transform: translateX(0);
+      // transform: translateX(0);
       margin-inline: auto;
       padding-block-start: 13.6rem;
       // padding-inline: 0;
