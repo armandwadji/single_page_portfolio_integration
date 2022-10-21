@@ -365,7 +365,11 @@ ul {
     grid-template-columns: 1fr 1fr;
     -moz-column-gap: 7rem;
          column-gap: 7rem;
-    transform: translateX(-4.4rem);
+    transform: translateX(-5rem);
+  }
+  .main .about.container {
+    -webkit-padding-end: 0;
+            padding-inline-end: 0;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -373,6 +377,10 @@ ul {
     margin-inline: auto;
     -webkit-padding-before: 13.6rem;
             padding-block-start: 13.6rem;
+  }
+  .main .about.container {
+    -webkit-padding-end: 4rem;
+            padding-inline-end: 4rem;
   }
 }
 .main .about__profil {

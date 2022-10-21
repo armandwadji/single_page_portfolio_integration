@@ -168,13 +168,20 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       column-gap: 7rem;
-      transform: translateX(-4.4rem);
+      transform: translateX(-5rem);
+
+      &.container {
+        padding-inline-end: 0;
+      }
     }
     @include VeryBigLaptop {
       // transform: translateX(0);
       margin-inline: auto;
       padding-block-start: 13.6rem;
-      // padding-inline: 0;
+
+      &.container {
+        padding-inline-end: 4rem;
+      }
     }
 
     &__profil {
