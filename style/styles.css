@@ -237,6 +237,13 @@ ul {
     font-size: 1.6rem;
   }
 }
+@media screen and (min-width: 1440px) {
+  .free-consultation button {
+    padding-block: 1.4rem;
+    padding-inline: 4.5rem;
+    font-size: 1.6rem;
+  }
+}
 
 .hero__nav {
   display: flex;
@@ -574,7 +581,7 @@ ul {
   align-items: center;
 }
 
-footer .contact {
+.footer .contact {
   background-color: #030303;
   color: #fff7f0;
   text-align: center;
@@ -582,10 +589,74 @@ footer .contact {
   flex-direction: column;
   align-items: center;
   padding-inline: 2.4rem;
+  padding-block: 4.9rem;
+  -webkit-margin-after: 4rem;
+          margin-block-end: 4rem;
 }
-footer .contact .free-consultation {
+@media screen and (min-width: 768px) {
+  .footer .contact {
+    padding-inline: 7.5rem;
+    padding-block: 5.6rem;
+    -webkit-margin-after: 5.6rem;
+            margin-block-end: 5.6rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .footer .contact {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+  }
+}
+.footer .contact__text {
+  -webkit-margin-after: 2.4rem;
+          margin-block-end: 2.4rem;
+}
+@media screen and (min-width: 768px) {
+  .footer .contact__text {
+    -webkit-margin-after: 2.6rem;
+            margin-block-end: 2.6rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .footer .contact__text {
+    flex: 1;
+  }
+}
+.footer .contact__text h2 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  -webkit-margin-after: 2.4rem;
+          margin-block-end: 2.4rem;
+}
+@media screen and (min-width: 768px) {
+  .footer .contact__text h2 {
+    font-size: 3.2rem;
+    -webkit-margin-after: 2.6rem;
+            margin-block-end: 2.6rem;
+  }
+}
+.footer .contact__text p {
+  font-weight: 500;
+}
+@media screen and (min-width: 768px) {
+  .footer .contact__text p {
+    font-size: 1.8rem;
+  }
+}
+.footer .contact .btn {
+  display: flex;
+  justify-content: end;
+}
+@media screen and (min-width: 1440px) {
+  .footer .contact .btn {
+    flex: 1;
+  }
+}
+.footer .contact .btn .free-consultation {
   background-color: #eb7565;
 }
-footer .hero__nav {
+.footer .hero__nav {
   margin: 0;
 }/*# sourceMappingURL=styles.css.map */

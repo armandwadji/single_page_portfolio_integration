@@ -29,6 +29,7 @@ ul {
 .container {
   position: relative;
   padding-inline: 1.6rem;
+
   margin-block-end: 10rem;
 
   @include Medium {
@@ -78,6 +79,12 @@ ul {
     color: $lightCream;
 
     @include Medium {
+      padding-block: 1.4rem;
+      padding-inline: 4.5rem;
+      font-size: 1.6rem;
+    }
+
+    @include VeryBigLaptop {
       padding-block: 1.4rem;
       padding-inline: 4.5rem;
       font-size: 1.6rem;

@@ -388,7 +388,7 @@
   }
 }
 
-footer {
+.footer {
   .contact {
     background-color: $black;
     color: $lightCream;
@@ -398,9 +398,65 @@ footer {
     align-items: center;
 
     padding-inline: 2.4rem;
+    padding-block: 4.9rem;
+    margin-block-end: 4rem;
 
-    .free-consultation {
-      background-color: $lightRed;
+    @include Medium {
+      padding-inline: 7.5rem;
+      padding-block: 5.6rem;
+      margin-block-end: 5.6rem;
+    }
+
+    @include VeryBigLaptop {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      text-align: start;
+    }
+
+    &__text {
+      margin-block-end: 2.4rem;
+
+      @include Medium {
+        margin-block-end: 2.6rem;
+      }
+
+      @include VeryBigLaptop {
+        flex: 1;
+      }
+
+      h2 {
+        font-size: 2.6rem;
+        font-weight: 700;
+        margin-block-end: 2.4rem;
+
+        @include Medium {
+          font-size: 3.2rem;
+          margin-block-end: 2.6rem;
+        }
+
+        @include VeryBigLaptop {
+        }
+      }
+
+      p {
+        font-weight: 500;
+
+        @include Medium {
+          font-size: 1.8rem;
+        }
+      }
+    }
+
+    .btn {
+      display: flex;
+      justify-content: end;
+      @include VeryBigLaptop {
+        flex: 1;
+      }
+      .free-consultation {
+        background-color: $lightRed;
+      }
     }
   }
 
