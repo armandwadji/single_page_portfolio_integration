@@ -26,21 +26,33 @@ ul {
   margin: 0;
 }
 
+@mixin marginBottom {
+  margin-block-end: 10rem;
+
+  @include Medium {
+    margin-block-end: 12rem;
+  }
+
+  @include VeryBigLaptop {
+    margin-block-end: 8.8rem;
+  }
+}
+
 .container {
   position: relative;
   padding-inline: 1.6rem;
 
-  margin-block-end: 10rem;
+  // margin-block-end: 10rem;
 
   @include Medium {
     padding-inline: 4rem;
-    margin-block-end: 12rem;
+    // margin-block-end: 12rem;
   }
 
   @include VeryBigLaptop {
     max-width: 111.1rem;
     margin-inline: auto;
-    margin-block-end: 8.8rem;
+    // margin-block-end: 8.8rem;
     padding-inline: 0;
   }
 }
@@ -67,6 +79,11 @@ ul {
 .free-consultation {
   background-color: $black;
   border-radius: 2.8rem;
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    background-color: $galacticBlue;
+  }
 
   button {
     text-transform: capitalize;

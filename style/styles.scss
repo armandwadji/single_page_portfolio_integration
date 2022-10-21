@@ -7,13 +7,13 @@
 
 //************* HERO *************
 .hero {
+  @include marginBottom;
   &__nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-block-start: clamp(1.6rem, calc(0.6rem + 1.7vw), 3.4rem);
-    margin-block-end: clamp(3.2rem, calc(1.3rem + 3vw), 6.4rem);
-
+    margin-block-end: clamp(3.2rem, calc(0.9rem + 4.5vw), 8rem);
     .logo {
       position: relative;
       background-color: $black;
@@ -32,22 +32,6 @@
         transform: translate(-50%, -50%);
       }
     }
-
-    // .free-consultation {
-    //   background-color: $black;
-    //   border-radius: 2.8rem;
-
-    //   button {
-    //     text-transform: capitalize;
-    //     padding-block: clamp(0.8rem, calc(0.4rem + 0.6vw), 1.4rem);
-    //     padding-inline: clamp(2.8rem, calc(1.4rem + 1.6vw), 4.5rem);
-    //     font-size: clamp(1.4rem, calc(0.8rem + 0.2vw), 1.6rem);
-    //     text-align: center;
-    //     background: transparent;
-    //     border: none;
-    //     color: $lightCream;
-    //   }
-    // }
   }
 
   &__slogan {
@@ -164,6 +148,8 @@
 
 .main {
   .about {
+    @include marginBottom;
+
     @include Medium {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -175,7 +161,7 @@
       }
     }
     @include VeryBigLaptop {
-      // transform: translateX(0);
+      transform: translateX(0);
       margin-inline: auto;
       padding-block-start: 13.6rem;
 
@@ -198,6 +184,7 @@
 
       @include Medium {
         transform: scale(1.2);
+        margin-block-end: 0;
       }
       @include VeryBigLaptop {
         transform: scale(1.5);
@@ -253,12 +240,16 @@
 
       .free-consultation {
         background-color: $lightRed;
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+          background-color: $summerYellow;
+        }
       }
     }
   }
 
   .portfolio {
-    // background-color: green;
     margin-block-end: 10rem;
 
     @include Medium {
@@ -363,7 +354,6 @@
     }
 
     &__arrows {
-      // background-color: green;
       position: relative;
       display: flex;
       justify-content: center;
@@ -383,6 +373,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+          background-color: $galacticBlue;
+        }
       }
     }
   }
@@ -456,6 +451,11 @@
       }
       .free-consultation {
         background-color: $lightRed;
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+          background-color: $summerYellow;
+        }
       }
     }
   }

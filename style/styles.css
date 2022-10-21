@@ -175,22 +175,16 @@ ul {
 .container {
   position: relative;
   padding-inline: 1.6rem;
-  -webkit-margin-after: 10rem;
-          margin-block-end: 10rem;
 }
 @media screen and (min-width: 768px) {
   .container {
     padding-inline: 4rem;
-    -webkit-margin-after: 12rem;
-            margin-block-end: 12rem;
   }
 }
 @media screen and (min-width: 1440px) {
   .container {
     max-width: 111.1rem;
     margin-inline: auto;
-    -webkit-margin-after: 8.8rem;
-            margin-block-end: 8.8rem;
     padding-inline: 0;
   }
 }
@@ -219,6 +213,10 @@ ul {
 .free-consultation {
   background-color: #030303;
   border-radius: 2.8rem;
+  transition: 0.2s ease-in-out;
+}
+.free-consultation:hover {
+  background-color: #755cde;
 }
 .free-consultation button {
   text-transform: capitalize;
@@ -245,14 +243,30 @@ ul {
   }
 }
 
+.hero {
+  -webkit-margin-after: 10rem;
+          margin-block-end: 10rem;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    -webkit-margin-after: 12rem;
+            margin-block-end: 12rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero {
+    -webkit-margin-after: 8.8rem;
+            margin-block-end: 8.8rem;
+  }
+}
 .hero__nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   -webkit-margin-before: clamp(1.6rem, 0.6rem + 1.7vw, 3.4rem);
           margin-block-start: clamp(1.6rem, 0.6rem + 1.7vw, 3.4rem);
-  -webkit-margin-after: clamp(3.2rem, 1.3rem + 3vw, 6.4rem);
-          margin-block-end: clamp(3.2rem, 1.3rem + 3vw, 6.4rem);
+  -webkit-margin-after: clamp(3.2rem, 0.9rem + 4.5vw, 8rem);
+          margin-block-end: clamp(3.2rem, 0.9rem + 4.5vw, 8rem);
 }
 .hero__nav .logo {
   position: relative;
@@ -366,6 +380,22 @@ ul {
   grid-area: M;
 }
 
+.main .about {
+  -webkit-margin-after: 10rem;
+          margin-block-end: 10rem;
+}
+@media screen and (min-width: 768px) {
+  .main .about {
+    -webkit-margin-after: 12rem;
+            margin-block-end: 12rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .main .about {
+    -webkit-margin-after: 8.8rem;
+            margin-block-end: 8.8rem;
+  }
+}
 @media screen and (min-width: 768px) {
   .main .about {
     display: grid;
@@ -381,6 +411,7 @@ ul {
 }
 @media screen and (min-width: 1440px) {
   .main .about {
+    transform: translateX(0);
     margin-inline: auto;
     -webkit-padding-before: 13.6rem;
             padding-block-start: 13.6rem;
@@ -406,6 +437,8 @@ ul {
 @media screen and (min-width: 768px) {
   .main .about__profil {
     transform: scale(1.2);
+    -webkit-margin-after: 0;
+            margin-block-end: 0;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -461,6 +494,10 @@ ul {
 }
 .main .about__info .free-consultation {
   background-color: #eb7565;
+  transition: 0.2s ease-in-out;
+}
+.main .about__info .free-consultation:hover {
+  background-color: #f6a560;
 }
 .main .portfolio {
   -webkit-margin-after: 10rem;
@@ -579,6 +616,10 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.2s ease-in-out;
+}
+.main .portfolio__arrows--left:hover, .main .portfolio__arrows--right:hover {
+  background-color: #755cde;
 }
 
 .footer .contact {
@@ -656,6 +697,10 @@ ul {
 }
 .footer .contact .btn .free-consultation {
   background-color: #eb7565;
+  transition: 0.2s ease-in-out;
+}
+.footer .contact .btn .free-consultation:hover {
+  background-color: #f6a560;
 }
 .footer .hero__nav {
   margin: 0;
