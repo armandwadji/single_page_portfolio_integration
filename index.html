@@ -84,30 +84,56 @@
       <!-- Portfolio -->
       <section class="portfolio">
         <h3 class="portfolio__title">my work</h3>
-        <div class="portfolio__caroussel">caroussel</div>
+
+        <!-- Caroussel -->
+        <div class="portfolio__caroussel">
+          <ul class="figure">
+            <li>
+              <img src="/img/CarousselLeft.jpg" alt="" />
+            </li>
+            <li>
+              <img src="/img/CarousselCenter.jpg" alt="" />
+            </li>
+            <li>
+              <img src="/img/CarousselRight.jpg" alt="" />
+            </li>
+          </ul>
+        </div>
+
+        <!-- arrows -->
         <div class="portfolio__arrows">
-          <div class="portfolio__arrows--left">left</div>
-          <div class="portfolio__arrows--right">right</div>
+          <button class="portfolio__arrows--left">
+            <img src="/img/arrowLeft.svg" alt="" />
+          </button>
+          <button class="portfolio__arrows--right">
+            <img src="/img/arrowRight.svg" alt="" />
+          </button>
         </div>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer container">
       <div class="contact">
-        <h2 class="contact__title">Book a call with me</h2>
-        <p class="contact__text">
-          I’d love to have a chat to see how I can help you. The best first step
-          is for us to discuss your project during a free consultation. Then we
-          can move forward from there.
-        </p>
-        <a href="#" class="free-consultation contact__btn">
+        <div class="contact__text">
+          <h2>Book a call with me</h2>
+          <p>
+            I’d love to have a chat to see how I can help you. The best first
+            step is for us to discuss your project during a free consultation.
+            Then we can move forward from there.
+          </p>
+        </div>
+
+        <a href="#" class="free-consultation">
           <button>free consultation</button>
         </a>
       </div>
-      <nav class="nav">
-        <a href="" class="logo">Logo</a>
-        <a href="">free consultation</a>
+      <!-- Navbar -->
+      <nav class="hero__nav">
+        <a href="#" class="logo">Logo</a>
+        <a href="#" class="free-consultation">
+          <button>free consultation</button>
+        </a>
       </nav>
     </footer>
   </body>

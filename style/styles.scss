@@ -256,4 +256,155 @@
       }
     }
   }
+
+  .portfolio {
+    // background-color: green;
+    margin-block-end: 10rem;
+
+    @include Medium {
+      margin-block-end: 12rem;
+    }
+
+    @include VeryBigLaptop {
+      margin-block-end: 8.8rem;
+    }
+
+    &__title {
+      text-transform: capitalize;
+      text-align: center;
+      font-weight: 700;
+      font-size: 2.4rem;
+      margin-block-end: 3.2rem;
+
+      @include Medium {
+        font-size: 3.2rem;
+        margin-block-end: 5.6rem;
+      }
+    }
+
+    &__caroussel {
+      overflow-x: hidden;
+      margin-block-end: 3.2rem;
+
+      @include Medium {
+        margin-block-end: 5.6rem;
+      }
+
+      ul {
+        position: relative;
+        min-height: 18rem;
+        max-height: 36rem;
+        width: 300vw;
+        left: calc((-100vw / 2) - 3rem);
+
+        @include Medium {
+          left: calc((-100vw / 2) - 6rem);
+        }
+
+        @media screen and (min-width: 1024px) {
+          // transform: translateX(-50%);
+        }
+
+        @include VeryBigLaptop {
+          left: -6rem * 2; //les espaces entres les deux images du caroussel
+        }
+
+        @media screen and (min-width: 1441px) {
+          left: 0;
+          max-width: 144rem;
+          margin-inline: auto;
+        }
+
+        // ******CALCUL :  72% -> (270 / 375) * 100 ********
+        & > li {
+          height: 100%;
+          width: calc(72% / 3 - 1rem);
+          max-width: 54rem;
+          float: left;
+          background-size: cover;
+          background-repeat: no-repeat;
+          border-radius: 1rem;
+          aspect-ratio: 3 / 2;
+
+          @media screen and (min-width: 1441px) {
+            width: calc(144rem / 3 - 2rem);
+          }
+
+          // &:nth-child(1) {
+          //   background-image: url("../img/CarousselLeft.jpg");
+          //   background-position: center;
+          // }
+          // &:nth-child(2) {
+          //   background-image: url("../img/CarousselCenter.jpg");
+          //   background-position: center;
+          // }
+          // &:nth-child(3) {
+          //   background-image: url("../img/CarousselRight.jpg");
+          //   background-position-x: left;
+          //   background-position-y: top;
+          // }
+
+          img {
+            border-radius: 1rem;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+
+        & > li:not(:last-child) {
+          margin-inline-end: 1.5rem;
+
+          @include Medium {
+            margin-inline-end: 3rem;
+          }
+        }
+      }
+    }
+
+    &__arrows {
+      // background-color: green;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & > button:not(:last-child) {
+        margin-inline-end: 1.6rem;
+      }
+
+      &--left,
+      &--right {
+        height: 6.4rem;
+        width: 6.4rem;
+        background-color: $black;
+        border: none;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+
+footer {
+  .contact {
+    background-color: $black;
+    color: $lightCream;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-inline: 2.4rem;
+
+    .free-consultation {
+      background-color: $lightRed;
+    }
+  }
+
+  .hero__nav {
+    margin: 0;
+  }
 }

@@ -454,4 +454,138 @@ ul {
 }
 .main .about__info .free-consultation {
   background-color: #eb7565;
+}
+.main .portfolio {
+  -webkit-margin-after: 10rem;
+          margin-block-end: 10rem;
+}
+@media screen and (min-width: 768px) {
+  .main .portfolio {
+    -webkit-margin-after: 12rem;
+            margin-block-end: 12rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .main .portfolio {
+    -webkit-margin-after: 8.8rem;
+            margin-block-end: 8.8rem;
+  }
+}
+.main .portfolio__title {
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.4rem;
+  -webkit-margin-after: 3.2rem;
+          margin-block-end: 3.2rem;
+}
+@media screen and (min-width: 768px) {
+  .main .portfolio__title {
+    font-size: 3.2rem;
+    -webkit-margin-after: 5.6rem;
+            margin-block-end: 5.6rem;
+  }
+}
+.main .portfolio__caroussel {
+  overflow-x: hidden;
+  -webkit-margin-after: 3.2rem;
+          margin-block-end: 3.2rem;
+}
+@media screen and (min-width: 768px) {
+  .main .portfolio__caroussel {
+    -webkit-margin-after: 5.6rem;
+            margin-block-end: 5.6rem;
+  }
+}
+.main .portfolio__caroussel ul {
+  position: relative;
+  min-height: 18rem;
+  max-height: 36rem;
+  width: 300vw;
+  left: calc(-50vw - 3rem);
+}
+@media screen and (min-width: 768px) {
+  .main .portfolio__caroussel ul {
+    left: calc(-50vw - 6rem);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .main .portfolio__caroussel ul {
+    left: -12rem;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .main .portfolio__caroussel ul {
+    left: 0;
+    max-width: 144rem;
+    margin-inline: auto;
+  }
+}
+.main .portfolio__caroussel ul > li {
+  height: 100%;
+  width: calc(24% - 1rem);
+  max-width: 54rem;
+  float: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  aspect-ratio: 3/2;
+}
+@media screen and (min-width: 1441px) {
+  .main .portfolio__caroussel ul > li {
+    width: 46rem;
+  }
+}
+.main .portfolio__caroussel ul > li img {
+  border-radius: 1rem;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .portfolio__caroussel ul > li:not(:last-child) {
+  -webkit-margin-end: 1.5rem;
+          margin-inline-end: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .main .portfolio__caroussel ul > li:not(:last-child) {
+    -webkit-margin-end: 3rem;
+            margin-inline-end: 3rem;
+  }
+}
+.main .portfolio__arrows {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .portfolio__arrows > button:not(:last-child) {
+  -webkit-margin-end: 1.6rem;
+          margin-inline-end: 1.6rem;
+}
+.main .portfolio__arrows--left, .main .portfolio__arrows--right {
+  height: 6.4rem;
+  width: 6.4rem;
+  background-color: #030303;
+  border: none;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .contact {
+  background-color: #030303;
+  color: #fff7f0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline: 2.4rem;
+}
+footer .contact .free-consultation {
+  background-color: #eb7565;
+}
+footer .hero__nav {
+  margin: 0;
 }/*# sourceMappingURL=styles.css.map */
