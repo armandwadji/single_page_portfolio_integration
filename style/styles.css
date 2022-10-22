@@ -380,6 +380,22 @@ ul {
   grid-area: M;
 }
 
+.main {
+  -webkit-margin-after: 10rem;
+          margin-block-end: 10rem;
+}
+@media screen and (min-width: 768px) {
+  .main {
+    -webkit-margin-after: 12rem;
+            margin-block-end: 12rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .main {
+    -webkit-margin-after: 8.8rem;
+            margin-block-end: 8.8rem;
+  }
+}
 .main .about {
   -webkit-margin-after: 10rem;
           margin-block-end: 10rem;
@@ -417,8 +433,8 @@ ul {
             padding-block-start: 13.6rem;
   }
   .main .about.container {
-    -webkit-padding-end: 4rem;
-            padding-inline-end: 4rem;
+    -webkit-padding-end: 5rem;
+            padding-inline-end: 5rem;
   }
 }
 .main .about__profil {
@@ -498,22 +514,6 @@ ul {
 }
 .main .about__info .free-consultation:hover {
   background-color: #f6a560;
-}
-.main .portfolio {
-  -webkit-margin-after: 10rem;
-          margin-block-end: 10rem;
-}
-@media screen and (min-width: 768px) {
-  .main .portfolio {
-    -webkit-margin-after: 12rem;
-            margin-block-end: 12rem;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .main .portfolio {
-    -webkit-margin-after: 8.8rem;
-            margin-block-end: 8.8rem;
-  }
 }
 .main .portfolio__title {
   text-transform: capitalize;
@@ -625,6 +625,7 @@ ul {
 .footer .contact {
   background-color: #030303;
   color: #fff7f0;
+  border-radius: 1rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -703,5 +704,6 @@ ul {
   background-color: #f6a560;
 }
 .footer .hero__nav {
-  margin: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
 }/*# sourceMappingURL=styles.css.map */
