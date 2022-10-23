@@ -67,10 +67,6 @@
       color: $mediumBrown;
       padding-inline: 3rem;
       max-width: 73rem;
-
-      @include VeryBigLaptop {
-        // padding-inline: 0;
-      }
     }
   }
 
