@@ -189,22 +189,14 @@ ul {
   }
 }
 
-.disposition > img:nth-child(1) {
+.disposition > :nth-child(1) {
   background: transparent;
   align-self: start;
   justify-self: end;
-  -webkit-padding-before: 2.4rem;
-          padding-block-start: 2.4rem;
-  -webkit-padding-end: 2.4rem;
-          padding-inline-end: 2.4rem;
 }
-.disposition > p:nth-child(2) {
+.disposition > :nth-child(2) {
   align-self: end;
   justify-self: start;
-  -webkit-padding-after: 2.4rem;
-          padding-block-end: 2.4rem;
-  -webkit-padding-start: 2.4rem;
-          padding-inline-start: 2.4rem;
   font-size: 2.4rem;
   text-transform: capitalize;
   color: #ffffff;
@@ -322,25 +314,24 @@ ul {
 }
 .hero__services {
   display: grid;
-  grid-template-rows: repeat(6, 18.2rem);
   gap: 2.4rem;
-  grid-template-areas: "G G" "G G" "U U" "I I" "P P" "M M";
+  grid-template-areas: "G G" "G G" "U A" "I I" "P P" "M M";
 }
 @media screen and (min-width: 768px) {
   .hero__services {
-    grid-template-rows: repeat(3, 18.2rem);
-    grid-template-areas: "G G U U" "G G I I" "P P M M";
+    grid-template-areas: "G G U A" "G G I I" "P P M M";
   }
 }
 @media screen and (min-width: 1440px) {
   .hero__services {
-    grid-template-rows: repeat(2, 18.2rem);
-    grid-template-areas: "G G U P" "G G I M";
+    grid-template-areas: "G G U A P P" "G G I I M M";
   }
 }
 .hero__services--item {
   border-radius: 0.8rem;
   display: grid;
+  padding: 2.4rem;
+  gap: 4rem;
 }
 .hero__services--item:nth-child(1) {
   background-color: #755cde;
@@ -348,34 +339,24 @@ ul {
 }
 .hero__services--item:nth-child(2) {
   grid-area: U;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  -moz-column-gap: 2.5rem;
-       column-gap: 2.5rem;
-}
-.hero__services--item:nth-child(2) ul {
-  border-radius: 0.8rem;
-}
-.hero__services--item:nth-child(2) ul:nth-child(1) {
-  display: grid;
   background-color: #f6a560;
 }
-.hero__services--item:nth-child(2) ul:nth-child(1) p {
+.hero__services--item:nth-child(2) > :last-child {
   text-transform: uppercase;
 }
-.hero__services--item:nth-child(2) ul:nth-child(2) {
-  display: grid;
+.hero__services--item:nth-child(3) {
+  grid-area: A;
   background-color: #f39e9e;
 }
-.hero__services--item:nth-child(3) {
+.hero__services--item:nth-child(4) {
   background-color: #eb7565;
   grid-area: I;
 }
-.hero__services--item:nth-child(4) {
+.hero__services--item:nth-child(5) {
   background-color: #61c4b7;
   grid-area: P;
 }
-.hero__services--item:nth-child(5) {
+.hero__services--item:nth-child(6) {
   background-color: #552049;
   grid-area: M;
 }
@@ -689,7 +670,7 @@ ul {
 }
 .footer .contact .btn {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 @media screen and (min-width: 1440px) {
   .footer .contact .btn {

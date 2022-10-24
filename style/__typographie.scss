@@ -8,7 +8,6 @@ body {
 
 :is(h1, h2, h3) {
   font-family: "Plus Jakarta Sans", serif;
-  // font-size: 5.6rem;
   font-weight: 300;
 }
 
@@ -42,35 +41,27 @@ ul {
   position: relative;
   padding-inline: 1.6rem;
 
-  // margin-block-end: 10rem;
-
   @include Medium {
     padding-inline: 4rem;
-    // margin-block-end: 12rem;
   }
 
   @include VeryBigLaptop {
     max-width: 111.1rem;
     margin-inline: auto;
-    // margin-block-end: 8.8rem;
     padding-inline: 0;
   }
 }
 
 .disposition {
-  & > img:nth-child(1) {
+  & > :nth-child(1) {
     background: transparent;
     align-self: start;
     justify-self: end;
-    padding-block-start: 2.4rem;
-    padding-inline-end: 2.4rem;
   }
 
-  & > p:nth-child(2) {
+  & > :nth-child(2) {
     align-self: end;
     justify-self: start;
-    padding-block-end: 2.4rem;
-    padding-inline-start: 2.4rem;
     font-size: 2.4rem;
     text-transform: capitalize;
     color: $white;
