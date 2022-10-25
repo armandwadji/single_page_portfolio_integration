@@ -446,15 +446,17 @@ ul {
 .main .about__profil > :nth-child(1) {
   justify-self: start;
   align-self: end;
+  transform: scale(0.9);
 }
 .main .about__profil > :nth-child(2) {
   justify-self: end;
   align-self: start;
+  transform: scale(0.95);
 }
 .main .about__profil > :nth-child(3) {
   position: absolute;
-  top: 5%;
-  left: -5%;
+  transform: scale(0.95);
+  left: -10%;
 }
 .main .about__info {
   display: flex;
