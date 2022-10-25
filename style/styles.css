@@ -331,7 +331,7 @@ ul {
   border-radius: 0.8rem;
   display: grid;
   padding: 2.4rem;
-  gap: 4rem;
+  row-gap: 4rem;
 }
 .hero__services--item:nth-child(1) {
   background-color: #755cde;

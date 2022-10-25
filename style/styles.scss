@@ -99,7 +99,7 @@
       border-radius: 0.8rem;
       display: grid;
       padding: 2.4rem;
-      gap: 4rem;
+      row-gap: 4rem;
 
       &:nth-child(1) {
         background-color: $galacticBlue;
@@ -194,7 +194,6 @@
       & > :nth-child(3) {
         position: absolute;
         transform: scale(0.95);
-        // top: 5%;
         left: -10%;
       }
     }
