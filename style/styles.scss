@@ -260,7 +260,7 @@
     &__title {
       text-transform: capitalize;
       text-align: center;
-      font-weight: 700;
+      font-weight: 600;
       font-size: 2.4rem;
       margin-block-end: 3.2rem;
 
@@ -270,80 +270,52 @@
       }
     }
 
-    &__caroussel {
-      overflow-x: hidden;
-      margin-block-end: 3.2rem;
+    //************* CAROUSSEL *************
+    .splide {
+      display: flex;
+      flex-direction: column;
+      max-width: min(144rem, 100%);
+      margin-inline: auto;
 
-      @include Medium {
-        margin-block-end: 5.6rem;
-      }
-
-      ul {
-        position: relative;
-        min-height: 18rem;
-        max-height: 36rem;
-        width: 300vw;
-        left: calc((-100vw / 2) - 3rem);
+      &__track {
+        margin-block-end: 3.2rem;
 
         @include Medium {
-          left: calc((-100vw / 2) - 6rem);
+          margin-block-end: 5.6rem;
         }
+      }
 
-        @include VeryBigLaptop {
-          left: -6rem * 2; //les espaces entres les deux images du caroussel
-        }
+      &__slide {
+        max-width: 54rem;
 
-        @media screen and (min-width: 1441px) {
-          left: 0;
-          max-width: 144rem;
-          margin-inline: auto;
-        }
-
-        // ******CALCUL :  72% -> (270 / 375) * 100 ********
-        & > li {
+        > img {
           height: 100%;
-          width: calc(72% / 3 - 1rem);
-          max-width: 54rem;
-          float: left;
-          background-size: cover;
-          background-repeat: no-repeat;
+          width: 100%;
+          object-fit: cover;
           border-radius: 1rem;
-          aspect-ratio: 3 / 2;
-
-          @media screen and (min-width: 1441px) {
-            width: calc(144rem / 3 - 2rem);
-          }
-
-          img {
-            border-radius: 1rem;
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-          }
         }
+      }
 
-        & > li:not(:last-child) {
-          margin-inline-end: 1.5rem;
-
-          @include Medium {
-            margin-inline-end: 3rem;
-          }
-        }
+      &__arrow {
+        position: static;
+        transform: translateY(0);
+        opacity: 1;
+        margin: 0.8rem;
       }
     }
 
-    &__arrows {
-      position: relative;
+    .splide__pagination__page {
+      visibility: hidden;
+    }
+
+    .work__slider__btn {
       display: flex;
       justify-content: center;
-      align-items: center;
+      margin-inline: auto;
+      // width: fit-content;
+      display: flex;
 
-      & > button:not(:last-child) {
-        margin-inline-end: 1.6rem;
-      }
-
-      &--left,
-      &--right {
+      & > button {
         height: 6.4rem;
         width: 6.4rem;
         background-color: $black;
@@ -418,6 +390,7 @@
 
       p {
         font-weight: 500;
+        max-width: 54rem;
 
         @include Medium {
           font-size: 1.8rem;

@@ -500,7 +500,7 @@ img {
 .main .portfolio__title {
   text-transform: capitalize;
   text-align: center;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 2.4rem;
   -webkit-margin-after: 3.2rem;
           margin-block-end: 3.2rem;
@@ -512,84 +512,48 @@ img {
             margin-block-end: 5.6rem;
   }
 }
-.main .portfolio__caroussel {
-  overflow-x: hidden;
+.main .portfolio .splide {
+  display: flex;
+  flex-direction: column;
+  max-width: min(144rem, 100%);
+  margin-inline: auto;
+}
+.main .portfolio .splide__track {
   -webkit-margin-after: 3.2rem;
           margin-block-end: 3.2rem;
 }
 @media screen and (min-width: 768px) {
-  .main .portfolio__caroussel {
+  .main .portfolio .splide__track {
     -webkit-margin-after: 5.6rem;
             margin-block-end: 5.6rem;
   }
 }
-.main .portfolio__caroussel ul {
-  position: relative;
-  min-height: 18rem;
-  max-height: 36rem;
-  width: 300vw;
-  left: calc(-50vw - 3rem);
-}
-@media screen and (min-width: 768px) {
-  .main .portfolio__caroussel ul {
-    left: calc(-50vw - 6rem);
-  }
-}
-@media screen and (min-width: 1440px) {
-  .main .portfolio__caroussel ul {
-    left: -12rem;
-  }
-}
-@media screen and (min-width: 1441px) {
-  .main .portfolio__caroussel ul {
-    left: 0;
-    max-width: 144rem;
-    margin-inline: auto;
-  }
-}
-.main .portfolio__caroussel ul > li {
-  height: 100%;
-  width: calc(24% - 1rem);
+.main .portfolio .splide__slide {
   max-width: 54rem;
-  float: left;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 1rem;
-  aspect-ratio: 3/2;
 }
-@media screen and (min-width: 1441px) {
-  .main .portfolio__caroussel ul > li {
-    width: 46rem;
-  }
-}
-.main .portfolio__caroussel ul > li img {
-  border-radius: 1rem;
+.main .portfolio .splide__slide > img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 1rem;
 }
-.main .portfolio__caroussel ul > li:not(:last-child) {
-  -webkit-margin-end: 1.5rem;
-          margin-inline-end: 1.5rem;
+.main .portfolio .splide__arrow {
+  position: static;
+  transform: translateY(0);
+  opacity: 1;
+  margin: 0.8rem;
 }
-@media screen and (min-width: 768px) {
-  .main .portfolio__caroussel ul > li:not(:last-child) {
-    -webkit-margin-end: 3rem;
-            margin-inline-end: 3rem;
-  }
+.main .portfolio .splide__pagination__page {
+  visibility: hidden;
 }
-.main .portfolio__arrows {
-  position: relative;
+.main .portfolio .work__slider__btn {
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-inline: auto;
+  display: flex;
 }
-.main .portfolio__arrows > button:not(:last-child) {
-  -webkit-margin-end: 1.6rem;
-          margin-inline-end: 1.6rem;
-}
-.main .portfolio__arrows--left, .main .portfolio__arrows--right {
+.main .portfolio .work__slider__btn > button {
   height: 6.4rem;
   width: 6.4rem;
   background-color: #030303;
@@ -600,7 +564,7 @@ img {
   align-items: center;
   transition: 0.2s ease-in-out;
 }
-.main .portfolio__arrows--left:hover, .main .portfolio__arrows--right:hover {
+.main .portfolio .work__slider__btn > button:hover {
   background-color: #755cde;
 }
 
@@ -663,6 +627,7 @@ img {
 }
 .footer .contact__text p {
   font-weight: 500;
+  max-width: 54rem;
 }
 @media screen and (min-width: 768px) {
   .footer .contact__text p {

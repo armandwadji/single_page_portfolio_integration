@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DesignPortfolio</title>
+    <link rel="stylesheet" href="/style/splide.min.css" />
     <link rel="stylesheet" href="/style/styles.css" />
   </head>
   <body>
@@ -83,28 +84,47 @@
         <h3 class="portfolio__title">my work</h3>
 
         <!-- Caroussel -->
-        <div class="portfolio__caroussel">
-          <ul class="figure">
-            <li>
-              <img src="/img/CarousselLeft.jpg" alt="" />
-            </li>
-            <li>
-              <img src="/img/CarousselCenter.jpg" alt="" />
-            </li>
-            <li>
-              <img src="/img/CarousselRight.jpg" alt="" />
-            </li>
-          </ul>
-        </div>
+        <div class="splide">
+          <div
+            class="splide__track work__slider"
+            aria-label="Splide Basic HTML Example"
+          >
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="/img/CarousselCenter.jpg" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="/img/CarousselRight.jpg" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="/img/CarousselLeft1.jpg" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="/img/CarousselRight2.jpg" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="/img/CarousselLeft.jpg" alt="" />
+              </li>
+            </ul>
+          </div>
 
-        <!-- arrows -->
-        <div class="portfolio__arrows">
-          <button class="portfolio__arrows--left">
-            <img src="/img/arrowLeft.svg" alt="" />
-          </button>
-          <button class="portfolio__arrows--right">
-            <img src="/img/arrowRight.svg" alt="" />
-          </button>
+          <!-- arrows -->
+          <div class="splide__arrows">
+            <div class="work__slider__btn splide__arrows splide__arrows--ltr">
+              <button
+                class="btn btn--round btn--black prev splide__arrow splide__arrow--prev"
+                aria-label="Projet précédent"
+              >
+                <img src="/img/arrowLeft.svg" alt="" aria-hidden="true" />
+              </button>
+              <button
+                class="btn btn--round btn--black next splide__arrow splide__arrow--next"
+                aria-label="Projet suivant"
+              >
+                <img src="/img/arrowRight.svg" alt="" aria-hidden="true" />
+              </button>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -136,5 +156,9 @@
         </a>
       </nav>
     </footer>
+
+    <!-- SCRIPT -->
+    <script src="/js/splide.min.js"></script>
+    <script src="/js/main.js"></script>
   </body>
 </html>
