@@ -20,7 +20,7 @@ img {
   display: block;
 }
 
-ul {
+:is(ul, li) {
   padding: 0;
   margin: 0;
 }
@@ -50,23 +50,6 @@ ul {
     max-width: 111.1rem;
     margin-inline: auto;
     padding-inline: 0;
-  }
-}
-
-// Grid layout component
-.disposition {
-  & > :nth-child(1) {
-    background: transparent;
-    align-self: start;
-    justify-self: end;
-  }
-
-  & > :nth-child(2) {
-    align-self: end;
-    justify-self: start;
-    font-size: 2.4rem;
-    text-transform: capitalize;
-    color: $white;
   }
 }
 

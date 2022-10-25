@@ -167,7 +167,7 @@ img {
   display: block;
 }
 
-ul {
+:is(ul, li) {
   padding: 0;
   margin: 0;
 }
@@ -187,19 +187,6 @@ ul {
     margin-inline: auto;
     padding-inline: 0;
   }
-}
-
-.disposition > :nth-child(1) {
-  background: transparent;
-  align-self: start;
-  justify-self: end;
-}
-.disposition > :nth-child(2) {
-  align-self: end;
-  justify-self: start;
-  font-size: 2.4rem;
-  text-transform: capitalize;
-  color: #ffffff;
 }
 
 .free-consultation {
@@ -359,6 +346,18 @@ ul {
 .hero__services--item:nth-child(6) {
   background-color: #552049;
   grid-area: M;
+}
+.hero__services--item > :nth-child(1) {
+  background: transparent;
+  align-self: start;
+  justify-self: end;
+}
+.hero__services--item > :nth-child(2) {
+  align-self: end;
+  justify-self: start;
+  font-size: 2.4rem;
+  text-transform: capitalize;
+  color: #ffffff;
 }
 
 .main {

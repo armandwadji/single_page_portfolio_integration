@@ -101,6 +101,7 @@
       padding: 2.4rem;
       row-gap: 4rem;
 
+      // Containers : grilles
       &:nth-child(1) {
         background-color: $galacticBlue;
         grid-area: G;
@@ -128,6 +129,21 @@
       &:nth-child(6) {
         background-color: $darkPurple;
         grid-area: M;
+      }
+
+      // Contents : contenus des grilles
+      & > :nth-child(1) {
+        background: transparent;
+        align-self: start;
+        justify-self: end;
+      }
+
+      & > :nth-child(2) {
+        align-self: end;
+        justify-self: start;
+        font-size: 2.4rem;
+        text-transform: capitalize;
+        color: $white;
       }
     }
   }
