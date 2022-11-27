@@ -7,7 +7,7 @@
 
 lien du site : [Portfolio Single Page CEFIM](https://portfoliospaw.netlify.app/)
 
-<img width="2560" alt="comfy store homeScreen header" src="https://user-images.githubusercontent.com/90448006/197330624-c546edbb-1e67-4fb5-a94e-c6136110a31a.png">
+<img width="2560" alt="comfy store homeScreen header" src="https://user-images.githubusercontent.com/90448006/204124917-81f22dfd-d8c2-4cb4-b575-82d0aefbb07a.png">
 
 ## Description
 Integration de la maquette du projet single page portfolio. CEFIM
